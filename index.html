@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="common_wrapper">
+
+        <form action="#">
+            <div class="form_group">
+                <label for="book_title">Waqiya Title / Heading</label>
+                <div class="input">
+                    <input type="text" name="book_title" id="book_title">
+                </div>
+            </div>
+    
+            <div class="form_group">
+                <label for="file_name">Waqiya Paragraph</label>
+                <div class="input para_parent">
+                    <input type="text" name="file_name" id="file_name">
+                </div>
+            </div>
+            <button class="add_para">+</button>
+            <button class="remove">-</button>
+    
+            <div class="form_group">
+                <textarea name="generated_code" id="mycode" rows="15"></textarea>
+            </div>
+    
+            <input type="submit" value="Copy Code">
+    
+        </form>
+
+<div class="waqiyat_section_code" style="display: none;">
+
+    <a href="#waqiya" id="waqiya"></a>
+    <div class="waqiya_pg">
+        <h1></h1>
+        <div class="waqiya_pg_close">X</div>
+        <p></p>
+    </div>
+
+</div>
+    
+</body>
+</html>
