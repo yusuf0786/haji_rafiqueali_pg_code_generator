@@ -46,9 +46,10 @@ form {
 }
 .add_para, .remove {
     margin-bottom: 15px;
-    padding: 10px 25px;
+    padding: 5px 20px;
     border: 0;
     border-radius: 10px;
+    font-size: 25px;
     background-color: blueviolet;
     color: #fff;
     cursor: pointer;
