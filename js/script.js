@@ -1,7 +1,7 @@
 // targetting the elements
+let form = document.getElementById("form")
 let book_name = document.querySelector("#book_title")
 let file_name = document.querySelectorAll(".para_parent input")
-let copy_btn = document.querySelector("input[type='submit']")
 let waqiyat_section_code = document.querySelector(".waqiyat_section_code")
 
 // running the function while inputing in the input
@@ -17,7 +17,7 @@ function myfunction() {
     }
 
     // generated code inside elements
-    let waqiya_heading = document.querySelector("#waqiya")
+    let waqiya_heading = document.querySelector(".waqiya")
     let waqiya_heading2 = document.querySelector(".waqiya_pg h1")
     waqiya_heading.innerHTML = book_name.value
     waqiya_heading2.innerHTML = book_name.value
@@ -36,7 +36,7 @@ function myfunction() {
 myfunction()
 
 /* copieng the value inside the textarea using the copy_btn */
-copy_btn.addEventListener('click', function(e){
+form.addEventListener('submit', function(e){
   e.preventDefault()
   copy_the_code()
 })
